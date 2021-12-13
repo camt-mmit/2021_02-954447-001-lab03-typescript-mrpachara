@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "clean": "npx rimraf dist/",
-    "lint": "npx eslint src/**/*.ts",
-    "copy-files": "npx copyfiles -u 1 src/**/*.html src/**/*.css dist/",
+    "clean": "rimraf dist/",
+    "lint": "eslint src/**/*.ts",
+    "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.css dist/",
     "build": "yarn lint && yarn clean && tsc && yarn copy-files"
   },
   "devDependencies": {
